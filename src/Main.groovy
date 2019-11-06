@@ -8,7 +8,6 @@ Assim teremos uma aplicação orientado a objetos.
 */
 
 static void main(String[] args) {
-
     Scanner tc = new Scanner(System.in)
     Agenda.mixin(Metodos)
 
@@ -18,7 +17,6 @@ static void main(String[] args) {
     int escolha = 0
 
      while (escolha != 6) {
-
         println("Menu:")
         println("1 - Adicionar novo contato")
         println("2 - Remover contato")

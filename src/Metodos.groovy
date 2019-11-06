@@ -2,7 +2,7 @@ class Metodos {
 
     //As classes não precisam ter o mesmo nome base que suas definições de arquivo de origem
 
-    static Scanner tc = new Scanner(System.in)
+    public  Scanner tc = new Scanner(System.in)
 
 
      Agenda pegarDados() {
@@ -127,11 +127,11 @@ class Metodos {
             }
             else {
 
-                contato = contato.elo
                 if (contato.elo == null) {
                     println("Contato não encontrado!")
                     break
                 }
+                contato = contato.elo
 
             }
 
@@ -144,7 +144,6 @@ class Metodos {
         Agenda listagem = lista.primeiro
         while (listagem != null) {
 
-            println("-------------------------------------------")
             println("Nome: ${listagem.nome} ${listagem.sobrenome}")
             println("Telefone: ${listagem.telefone}")
             println("Data de aniversário: ${listagem.dataAniver}")
